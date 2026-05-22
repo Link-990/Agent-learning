@@ -1,0 +1,20 @@
+# Local Claude/project settings
+.claude/
+
+# Secrets and local environment
+.env
+.env.*
+*.key
+*.pem
+
+# Generated logs and temporary outputs
+image_generation_failures.json
+apixgo-models.json
+*.output
+__pycache__/
+*.pyc
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/

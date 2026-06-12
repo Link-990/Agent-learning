@@ -193,88 +193,88 @@ SFT 更适合稳定行为和输出格式，RAG 更适合可更新、可追溯的
 
 Python 基础部分主要用于补齐 AI 应用开发中常见的工程语言能力。面试里很多大模型应用问题最终还是会落到数据结构、对象引用、并发模型、内存管理和 Python 运行机制上。
 
-- [基础数据类型](01-python基础/01-基础数据类型.md)
-- [可变与不可变数据类型](01-python基础/02-可变与不可变数据类型.md)
-- [装饰器与生成器](01-python基础/03-装饰器与生成器.md)
-- [深拷贝与浅拷贝](01-python基础/04-深拷贝与浅拷贝.md)
-- [并发与并行](01-python基础/05-并发与并行.md)
-- [多线程实现与 GIL](01-python基础/06-多线程实现与GIL.md)
-- [Python 内存管理方式](01-python基础/07-Python内存管理方式.md)
+- [基础数据类型](01-python-basics/01-basic-types.md)
+- [可变与不可变数据类型](01-python-basics/02-mutable-immutable.md)
+- [装饰器与生成器](01-python-basics/03-decorators-generators.md)
+- [深拷贝与浅拷贝](01-python-basics/04-deep-shallow-copy.md)
+- [并发与并行](01-python-basics/05-concurrency-parallelism.md)
+- [多线程实现与 GIL](01-python-basics/06-threading-gil.md)
+- [Python 内存管理方式](01-python-basics/07-memory-management.md)
 
 ### 02. 大模型基本框架
 
 这一部分帮助你理解大模型为什么能处理上下文、为什么推理是逐 token 生成、为什么长上下文会变慢，以及 KV Cache 为什么会影响推理成本。
 
-- [Transformer 架构和核心组件](02-大模型基本框架/01-Transformer架构和核心组件.md)
-- [自注意力机制](02-大模型基本框架/02-自注意力机制.md)
-- [Encoder-Only 和 Decoder-Only 模型区别](02-大模型基本框架/03-Encoder-Only和Decoder-Only模型区别.md)
-- [大模型输入到输出运行机制](02-大模型基本框架/04-大模型输入到输出运行机制.md)
-- [KV 缓存](02-大模型基本框架/05-KV缓存.md)
+- [Transformer 架构和核心组件](02-llm-framework/01-transformer.md)
+- [自注意力机制](02-llm-framework/02-self-attention.md)
+- [Encoder-Only 和 Decoder-Only 模型区别](02-llm-framework/03-encoder-decoder.md)
+- [大模型输入到输出运行机制](02-llm-framework/04-llm-io.md)
+- [KV 缓存](02-llm-framework/05-kv-cache.md)
 
 ### 03. RAG
 
 RAG 是大模型应用开发面试中的高频核心模块。学习时重点关注知识从哪里来、如何被切分和召回、为什么召回到了也可能答错，以及如何建立评测和排查链路。
 
-- [RAG 全流程](03-RAG/01-RAG全流程.md)
-- [向量模型选型及区别](03-RAG/02-向量模型选型及区别.md)
-- [分块策略选型](03-RAG/03-分块策略选型.md)
-- [向量检索和关键词检索区别](03-RAG/04-向量检索和关键词检索区别.md)
-- [检索优化策略](03-RAG/05-检索优化策略.md)
+- [RAG 全流程](03-RAG/01-rag-overview.md)
+- [向量模型选型及区别](03-RAG/02-embedding-models.md)
+- [分块策略选型](03-RAG/03-chunking.md)
+- [向量检索和关键词检索区别](03-RAG/04-vector-vs-keyword.md)
+- [检索优化策略](03-RAG/05-retrieval-optimization.md)
 
 ### 04. Agent
 
 Agent 部分重点不是“模型会规划”，而是模型如何在受控系统里使用工具、读取反馈、管理状态和完成多步任务。学习时要特别注意 Agent 与 Workflow 的边界。
 
-- [Agent 核心组件](04-Agent/01-Agent核心组件.md)
-- [Agent 推理范式](04-Agent/02-Agent推理范式.md)
-- [Agent 和 Workflow 区别](04-Agent/03-Agent和Workflow区别.md)
-- [记忆管理](04-Agent/04-记忆管理.md)
-- [Function Calling 工具调用](04-Agent/05-Function-Calling工具调用.md)
-- [Multi-Agent 架构通信机制与 A2A](04-Agent/06-Multi-Agent架构通信机制与A2A.md)
+- [Agent 核心组件](04-Agent/01-agent-core.md)
+- [Agent 推理范式](04-Agent/02-agent-reasoning.md)
+- [Agent 和 Workflow 区别](04-Agent/03-agent-vs-workflow.md)
+- [记忆管理](04-Agent/04-memory.md)
+- [Function Calling 工具调用](04-Agent/05-function-calling.md)
+- [Multi-Agent 架构通信机制与 A2A](04-Agent/06-multi-agent-a2a.md)
 
 ### 05. MCP
 
 MCP 部分关注模型与外部工具、资源、提示词能力之间的标准化连接方式。学习时要把 MCP 和 Function Calling、CLI、普通 HTTP API 区分开。
 
-- [MCP 核心组件](05-MCP/01-MCP核心组件.md)
-- [MCP 调用流程](05-MCP/02-MCP调用流程.md)
-- [MCP 通信机制](05-MCP/03-MCP通信机制.md)
-- [MCP、CLI、Function Calling 区别](05-MCP/04-MCP-CLI-Function-Calling区别.md)
-- [MCP 优缺点](05-MCP/05-MCP优缺点.md)
+- [MCP 核心组件](05-MCP/01-mcp-core.md)
+- [MCP 调用流程](05-MCP/02-mcp-flow.md)
+- [MCP 通信机制](05-MCP/03-mcp-comm.md)
+- [MCP、CLI、Function Calling 区别](05-MCP/04-mcp-vs-cli-fc.md)
+- [MCP 优缺点](05-MCP/05-mcp-pros-cons.md)
 
 ### 06. Skills
 
 Skills 可以理解为面向任务的能力包。学习时重点看它如何通过渐进式披露降低上下文成本，以及它和 MCP、CLI、Function Calling 如何协同。
 
-- [Skills 实现方式](06-Skills/01-Skills实现方式.md)
-- [Skills 渐进式披露特点](06-Skills/02-Skills渐进式披露特点.md)
-- [MCP、CLI、Skills、Function Calling 区别与协同](06-Skills/03-MCP-CLI-Skills-Function-Calling区别与协同.md)
-- [Skills 优缺点](06-Skills/04-Skills优缺点.md)
+- [Skills 实现方式](06-Skills/01-skills-impl.md)
+- [Skills 渐进式披露特点](06-Skills/02-skills-disclosure.md)
+- [MCP、CLI、Skills、Function Calling 区别与协同](06-Skills/03-mcp-cli-skills-fc.md)
+- [Skills 优缺点](06-Skills/04-skills-pros-cons.md)
 
 ### 07. 微调
 
 微调部分重点是理解“行为适配”和“知识更新”的区别。SFT、LoRA、QLoRA、Prefix Tuning、Prompt Tuning 解决的问题不同，更新的参数范围也不同。
 
-- [监督微调](07-微调/01-监督微调.md)
-- [参数高效微调方法](07-微调/02-参数高效微调方法.md)
+- [监督微调](07-finetuning/01-sft.md)
+- [参数高效微调方法](07-finetuning/02-peft.md)
 
 ### 08. 强化学习
 
 强化学习部分主要用于理解大模型对齐。学习时重点区分 RLHF、PPO、DPO、GRPO 的训练信号、优化目标和工程代价，而不是只背缩写。
 
-- [RLHF：基于人类反馈的强化学习](08-强化学习/01-RLHF基于人类反馈的强化学习.md)
-- [PPO](08-强化学习/02-PPO.md)
-- [DPO](08-强化学习/03-DPO.md)
-- [GRPO](08-强化学习/04-GRPO.md)
+- [RLHF：基于人类反馈的强化学习](08-rl/01-rlhf.md)
+- [PPO](08-rl/02-PPO.md)
+- [DPO](08-rl/03-DPO.md)
+- [GRPO](08-rl/04-GRPO.md)
 
 ### 09. 主流 Agent 框架
 
 框架部分重点是理解框架为什么存在：它们解决的是工具编排、状态管理、运行时边界、可观测性和工程协作问题，而不是单纯的名词对比。
 
-- [OpenAI Agents 和 Hermes 区别](09-主流Agent框架/01-OpenAI-Agents和Hermes区别.md)
-- [Harness 机制](09-主流Agent框架/02-Harness机制.md)
-- [Claude Code 中的 Harness 实现](09-主流Agent框架/03-Claude-Code中的Harness实现.md)
-- [LangChain、LangGraph 与简单 Agent 搭建](09-主流Agent框架/04-LangChain-LangGraph与简单Agent搭建.md)
+- [OpenAI Agents 和 Hermes 区别](09-agent-frameworks/01-openai-vs-hermes.md)
+- [Harness 机制](09-agent-frameworks/02-harness.md)
+- [Claude Code 中的 Harness 实现](09-agent-frameworks/03-claude-harness.md)
+- [LangChain、LangGraph 与简单 Agent 搭建](09-agent-frameworks/04-langchain-langgraph.md)
 
 ## 如何使用配图
 

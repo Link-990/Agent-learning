@@ -18,3 +18,21 @@ __pycache__/
 .DS_Store
 Thumbs.db
 .vscode/
+
+# CSDN 发文自动化脚本与临时产物（不入库）
+.publish_progress.json
+csdn_cookies.json
+csdn_title.txt
+csdn_login.py
+csdn_publish.py
+csdn_upload.py
+pub_real_chrome.py
+replace_img_paths.py
+batch_pub.py
+batch_pub_v2.py
+batch_publish.sh
+fill_and_publish.js
+test_*.py
+csdn_*.png
+debug_screenshot.png
+upload_debug.png

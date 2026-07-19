@@ -1,8 +1,24 @@
 # AI Agent 与大模型应用开发面试笔记
 
+![GitHub last commit](https://img.shields.io/github/last-commit/Link-990/Agent-learning?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/Link-990/Agent-learning?style=flat-square)
+![License](https://img.shields.io/badge/用途-学习交流-blue?style=flat-square)
+
 面向 AI Agent、大语言模型（LLM）、RAG、MCP、Skills、微调、强化学习与 Agent 框架岗位的中文面试与工程实践笔记。
 
+> 一份可检索、可复述、贴近工程落地的 AI 面试知识库。
+
 这不是只背定义的题库：每篇内容都围绕“问题场景 → 核心机制 → 工程边界 → 高频追问 → 可复述答案”展开，帮助你把概念讲清楚、把方案落下来、把线上问题排查出来。
+
+## 快速开始
+
+| 你的目标 | 从这里开始 |
+| --- | --- |
+| 零基础建立主线 | [Python 基础](01-python基础/README.md) → [大模型基本框架](02-大模型基本框架/README.md) |
+| 准备 RAG 面试 | [RAG 全流程](03-RAG/01-RAG全流程.md) |
+| 准备 Agent 面试 | [Agent 核心组件](04-Agent/01-Agent核心组件.md) |
+| 理解工具生态 | [MCP](05-MCP/README.md) → [Skills](06-Skills/README.md) |
+| 复习训练与对齐 | [微调](07-微调/README.md) → [强化学习](08-强化学习/README.md) |
 
 ## 适合搜索的问题
 

@@ -22,7 +22,7 @@
 
 总结来说，Agent 的本质矛盾是：**模型负责理解和生成，系统负责对行动负责**。组件设计的关键不是堆功能，而是确保每一层都有兜底——知道什么时候该停、什么时候该回退、什么时候该交给人。
 
-![Agent 组件之间的关系](https://gitee.com/linkio666/image/raw/main/04-Agent/01-agent-core/01-概念总览.png)
+![Agent 组件之间的关系](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/04-Agent/01-agent-core/01-概念总览.png)
 
 ## 📝 详细解析
 
@@ -67,7 +67,7 @@
 
 面试里你能把这个例子从"模型直接写"到"六层架构兜底"讲清楚，比背任何定义都更有说服力。面试官最怕的就是候选人只会说"Agent 有规划、记忆、工具"，但问"如果工具返回失败怎么办"就卡住了。
 
-![Agent 从目标到反馈的运行链路](https://gitee.com/linkio666/image/raw/main/04-Agent/01-agent-core/02-运行机制.png)
+![Agent 从目标到反馈的运行链路](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/04-Agent/01-agent-core/02-运行机制.png)
 
 ### 边界和风险：什么时候不要让 Agent 自己决定
 

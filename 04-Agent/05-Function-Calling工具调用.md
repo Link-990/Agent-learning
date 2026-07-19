@@ -20,7 +20,7 @@
 
 核心认知有两点。第一，**模型只是提出了一个工具调用请求，它不负责、也没有能力验证执行结果**。工具返回 200 不代表业务成功，返回"超时"模型可能忽略并编造结果。第二，**Function Calling 不等于 Agent**。它只解决了"模型如何表达'我想调用哪个工具'"这一个环节，完整的 Agent 还需要目标管理、规划、记忆、执行控制和反馈闭环。
 
-![Function Calling 的角色边界](https://gitee.com/linkio666/image/raw/main/04-Agent/05-function-calling/01-概念总览.png)
+![Function Calling 的角色边界](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/04-Agent/05-function-calling/01-概念总览.png)
 
 ## 📝 详细解析
 
@@ -62,7 +62,7 @@ LLM 最擅长的是理解模糊的自然语言——"帮我查下最近有啥异
 
 这个例子展示了 Function Calling 的三个关键设计点：**只读和写操作分离**（前两个工具模型可以自由调，后两个需要确认和校验）、**输出格式包含业务语义**（不只是 HTTP 200）、**宿主系统的校验是最后一道防线**（模型生成的参数只是提案，不是命令）。
 
-![Function Calling 从请求到回填的流程](https://gitee.com/linkio666/image/raw/main/04-Agent/05-function-calling/02-运行机制.png)
+![Function Calling 从请求到回填的流程](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/04-Agent/05-function-calling/02-运行机制.png)
 
 ### 边界和风险：工具调用失败的七种情况
 

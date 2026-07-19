@@ -50,7 +50,7 @@ Transformer 要同时解决两个打架的需求。
 
 文本先被切成 token，查表变成向量。关键来了——"苹果"这个词的初始 embedding 是固定的，但这句话里它指代公司，下句话里可能指代水果。怎么区分？靠上下文。但在还没看上下文之前，模型得先知道这些 token 的先后顺序，所以要在 embedding 上叠加位置编码。常见的做法有绝对位置编码（sin/cos）、相对位置编码和 RoPE——不管哪种，目的都是告诉模型："苹果"在位置 1，"发布"在位置 2，别搞混。
 
-![Transformer 概念总览](https://gitee.com/linkio666/image/raw/main/02-llm-framework/01-transformer/01-概念总览.png)
+![Transformer 概念总览](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/02-llm-framework/01-transformer/01-概念总览.png)
 
 **第二步：进入 Transformer Block（循环多次）**
 
@@ -79,7 +79,7 @@ x = x + feed_forward(LayerNorm(x))      # 第二轮：自己消化
 
 最后一层 Block 输出后，取最后一个位置的 hidden state，通过 `lm_head`（一个线性映射）投影到词表大小，得到 logits——也就是词表里每个 token 作为"下一个 token"的未归一化分数。logits 不是最终答案，还要经过 temperature、top-p、top-k 等解码策略，才变成实际输出的 token。
 
-![Transformer 运行机制](https://gitee.com/linkio666/image/raw/main/02-llm-framework/01-transformer/02-运行机制.png)
+![Transformer 运行机制](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/02-llm-framework/01-transformer/02-运行机制.png)
 
 ### 工程例子：为什么同一个词在不同句子里"变了"
 

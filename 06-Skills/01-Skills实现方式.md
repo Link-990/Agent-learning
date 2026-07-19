@@ -32,7 +32,7 @@ Skill的实现方式，核心是把"隐性经验"变成"可加载、可执行、
 
 Skill的价值，就在于把"老员工脑子里的经验"显性化。经验是什么？不是一句"请认真处理"，而是"遇到扫描件先OCR，遇到加密文件先提示输入密码，合并多个PDF要保持页码顺序，大文件要按页处理防止超时"。这些细节如果不写进Skill，模型每次都会用"通用常识"来猜测——猜对了就过了，猜错了就是生产事故。
 
-![Skill 作为任务能力包的结构](https://gitee.com/linkio666/image/raw/main/06-Skills/01-skills-impl/01-概念总览.png)
+![Skill 作为任务能力包的结构](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/06-Skills/01-skills-impl/01-概念总览.png)
 
 ### 底层机制（类比教学）
 
@@ -75,7 +75,7 @@ PDF处理流程：
 
 **工具调用**：Skill本身没有`merge_pdfs()`这个函数。它指导模型"你应该调用PDF处理工具做合并"，然后模型通过Function Calling发出`merge_pdfs(paths=["a.pdf","b.pdf","c.pdf"], output="merged.pdf")`的请求。这个工具可能是宿主系统提供的，也可能是通过MCP Server暴露的。Skill只负责告诉模型"该调什么、按什么顺序调、调用前后要检查什么"，不负责提供底层实现。
 
-![Skill 从触发到执行的流程](https://gitee.com/linkio666/image/raw/main/06-Skills/01-skills-impl/02-运行机制.png)
+![Skill 从触发到执行的流程](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/06-Skills/01-skills-impl/02-运行机制.png)
 
 这就是一个完整的Skill运行闭环：**元信息做匹配→触发条件做过滤→主体流程做指导→可选资源做补充→外部工具做执行。** 每一层各司其职，谁也别越权。
 

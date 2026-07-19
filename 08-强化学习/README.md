@@ -3,7 +3,7 @@
 强化学习用于让大模型输出更符合偏好、规则和复杂推理目标。重点掌握 RLHF、PPO、DPO 和 GRPO 的区别。
 
 
-![强化学习 路径总览图](https://gitee.com/linkio666/image/raw/main/rlhf-ppo-dpo-grpo-map.png)
+![强化学习 路径总览图](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/rlhf-ppo-dpo-grpo-map.png)
 
 ## 考点目录
 

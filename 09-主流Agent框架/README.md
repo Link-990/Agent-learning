@@ -3,7 +3,7 @@
 主流 Agent 框架帮助开发者组织模型、工具、状态、记忆、编排和评测。选型时要关注任务复杂度和工程可控性。
 
 
-![主流 Agent 框架 路径总览图](https://gitee.com/linkio666/image/raw/main/agent-frameworks-map.png)
+![主流 Agent 框架 路径总览图](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/agent-frameworks-map.png)
 
 ## 考点目录
 

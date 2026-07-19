@@ -3,7 +3,7 @@
 大模型基本框架是 Agent 开发的认知底座。理解 Transformer、注意力、模型结构和 KV 缓存，才能解释大模型为什么能理解、生成和推理。
 
 
-![大模型基本框架 路径总览图](https://gitee.com/linkio666/image/raw/main/llm-architecture-flow.png)
+![大模型基本框架 路径总览图](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/llm-architecture-flow.png)
 
 ## 考点目录
 

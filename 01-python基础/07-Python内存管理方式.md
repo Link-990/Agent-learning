@@ -88,7 +88,7 @@ sys.getrefcount(a)     # 4（getrefcount 本身也会临时增加引用）
 
 **缺点**：处理不了循环引用、每次引用变化都要更新计数（有微小的性能开销）、无法处理 C 扩展里的手动内存管理。
 
-![Python 内存管理概念总览](https://gitee.com/linkio666/image/raw/main/01-python-basics/07-memory-management/01-概念总览.png)
+![Python 内存管理概念总览](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/01-python-basics/07-memory-management/01-概念总览.png)
 
 ### 二、`del` 到底删了什么？
 
@@ -145,7 +145,7 @@ gc.get_threshold()  # (700, 10, 10)
 
 大多数情况下你不需要手动 `gc.collect()`。CPython 会自动在合适时机触发。手动调用通常只在特定场景有意义：检查点、测试内存泄漏、或确定对象已经被释放。
 
-![Python 内存管理运行机制](https://gitee.com/linkio666/image/raw/main/01-python-basics/07-memory-management/02-运行机制.png)
+![Python 内存管理运行机制](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/01-python-basics/07-memory-management/02-运行机制.png)
 
 ### 四、核心机制三：内存池（优化）
 
@@ -299,7 +299,7 @@ print(child.parent())  # None
 
 面试回答按"**引用计数 → 循环 GC → 内存池 → del 边界 → 线上排查**"组织，层次清楚、有实操感。
 
-![Python 内存管理面试答题框架](https://gitee.com/linkio666/image/raw/main/01-python-basics/07-memory-management/03-面试答题框架.png)
+![Python 内存管理面试答题框架](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/01-python-basics/07-memory-management/03-面试答题框架.png)
 
 ---
 

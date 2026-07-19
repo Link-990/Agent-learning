@@ -3,7 +3,7 @@
 MCP 是模型应用连接外部工具和数据源的协议化方案。它重点解决工具能力如何被发现、描述、连接和复用。
 
 
-![MCP 路径总览图](https://gitee.com/linkio666/image/raw/main/mcp-call-flow.png)
+![MCP 路径总览图](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/mcp-call-flow.png)
 
 ## 考点目录
 

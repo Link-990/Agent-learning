@@ -44,7 +44,7 @@ Encoder-Decoder（T5、BART）是两者的组合：Encoder 先双向编码输入
 
 **生成类任务**必须保证因果性。"今天天气真___"——填"好"还是"差"？模型只能基于前面的"今天天气真"来判断，不能偷看后面的内容。如果训练时让模型看到后面写的"好"，那它根本不需要学语言规律，直接抄答案就行。但推理时没有"后面"可看，训练推理不一致，性能直接崩盘。**这就像考试，平时练习时翻书抄答案，真正考试时书被收走了，你一个字都写不出来。**
 
-![模型结构概念总览](https://gitee.com/linkio666/image/raw/main/02-llm-framework/03-encoder-decoder/01-概念总览.png)
+![模型结构概念总览](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/02-llm-framework/03-encoder-decoder/01-概念总览.png)
 
 ### 底层机制：三类结构怎么工作
 
@@ -65,7 +65,7 @@ Encoder-Decoder（T5、BART）是两者的组合：Encoder 先双向编码输入
 
 **Encoder-Decoder 的机理**：Encoder 读完整个输入，生成一个上下文表示；Decoder 在生成每一步时，既看 Encoder 的输出（cross-attention），又看自己前面生成的 token（self-attention with causal mask）。跨注意力是它独有的，让生成的每一步都能回头参考完整的输入编码。适合翻译这类"输入和输出不是简单续写关系"的任务。
 
-![模型运行机制](https://gitee.com/linkio666/image/raw/main/02-llm-framework/03-encoder-decoder/02-运行机制.png)
+![模型运行机制](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/02-llm-framework/03-encoder-decoder/02-运行机制.png)
 
 ### 工程例子：为什么 RAG 几乎都是"Encoder 检索 + Decoder 生成"
 

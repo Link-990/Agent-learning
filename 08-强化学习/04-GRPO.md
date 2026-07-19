@@ -4,7 +4,7 @@
 
 GRPO（Group Relative Policy Optimization，组内相对策略优化）的关键在于用**同一 prompt 下的一组多个候选回答做相对比较**，用组内奖励均值和标准差归一化来估计优势函数，从而彻底去掉对独立 value model 的依赖。它特别适合奖励可自动验证的任务（数学、代码、推理），但不适合奖励主观的场景。
 
-![GRPO 的定位](https://gitee.com/linkio666/image/raw/main/08-rl/04-GRPO/01-概念总览.png)
+![GRPO 的定位](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/08-rl/04-GRPO/01-概念总览.png)
 
 ---
 
@@ -81,7 +81,7 @@ GRPO:     (prompt, [answer_1, ..., answer_k], [r_1, ..., r_k])  —— 一个 pr
 - **跨题尺度统一**：一道简单题所有答案都在 0.9-1.0 之间，一道难题在 0.1-0.3 之间。不做归一化，简单题的"中等回答"（0.95）的原始奖励可能比难题的"优秀回答"（0.25）高得多，模型会过度学习简单题。归一化后，每道题内部比，全局信号更公平。
 - **自适应难度**：标准差天然反映题目的区分度。区分度高的题目（答案有对有错、分差大）标准差大，归一化后优势的绝对值反而被压缩；区分度低的题目（全对或全错）标准差小，归一化后微弱差异被放大——但这个放大可能是噪声。
 
-![GRPO 组内优化流程](https://gitee.com/linkio666/image/raw/main/08-rl/04-GRPO/02-运行机制.png)
+![GRPO 组内优化流程](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/08-rl/04-GRPO/02-运行机制.png)
 
 ---
 
@@ -163,7 +163,7 @@ GRPO:     (prompt, [answer_1, ..., answer_k], [r_1, ..., r_k])  —— 一个 pr
 
 "GRPO 排查我先看三条线。第一，奖励分布——每组是否有明显的正负样本区分？组内均值、标准差是多少？全对/全错的组占比多大？第二，生成质量——输出长度、KL、重复率、语言流畅度有没有退化？第三，任务指标——pass rate、测试准确率是否在持续上升？如果 pass rate 涨但人工抽检发现答案在投机取巧，回头审查奖励函数。"
 
-![GRPO 适用边界](https://gitee.com/linkio666/image/raw/main/08-rl/04-GRPO/03-面试答题框架.png)
+![GRPO 适用边界](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/08-rl/04-GRPO/03-面试答题框架.png)
 
 ---
 

@@ -4,7 +4,7 @@
 
 DPO 的真正含金量在于：**它把"带 KL 约束的偏好优化"这个 RL 问题，通过数学推导改写成了直接在偏好对上做监督学习的损失函数**。这不仅是工程简化，更是对 RLHF 问题本质的重新理解。
 
-![DPO 的位置](https://gitee.com/linkio666/image/raw/main/08-rl/03-DPO/01-概念总览.png)
+![DPO 的位置](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/08-rl/03-DPO/01-概念总览.png)
 
 ---
 
@@ -121,7 +121,7 @@ beta 在公式里放在 sigmoid 里面，直接放大或缩小 `(chosen优势 - 
 - Beta 0.5：平衡，大多数场景的起点。
 - Beta 1.0+：保守更新，适合数据噪声大、不想改变太多通用能力的场景。
 
-![DPO 训练机制](https://gitee.com/linkio666/image/raw/main/08-rl/03-DPO/02-运行机制.png)
+![DPO 训练机制](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/08-rl/03-DPO/02-运行机制.png)
 
 ---
 
@@ -183,7 +183,7 @@ DPO 同时看到 chosen 和 rejected 的对比，学到的是"有依据、有步
 
 **第五步：调 beta 和训练配置。** 如果模型跑飞，增大 beta（让约束更紧）；如果学不动，减小 beta。注意 **只对 answer 部分算 log probability**，prompt 部分不要纳入——否则 prompt 长度会污染损失。
 
-![DPO 适用边界](https://gitee.com/linkio666/image/raw/main/08-rl/03-DPO/03-面试答题框架.png)
+![DPO 适用边界](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/08-rl/03-DPO/03-面试答题框架.png)
 
 ---
 

@@ -88,7 +88,7 @@ print(counter)
 
 要给每个对象的引用计数加细粒度锁，会极大增加复杂度和降低单线程性能。GIL 用一把"大锁"来简化这个问题——反正同一时刻只有一个线程执行 Python 代码，引用计数的修改天然串行。对于很多 C 扩展作者来说，这也是福音——他们不需要处理 Python 对象的线程安全。
 
-![多线程与 GIL 概念总览](https://gitee.com/linkio666/image/raw/main/01-python-basics/06-threading-gil/01-概念总览.png)
+![多线程与 GIL 概念总览](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/01-python-basics/06-threading-gil/01-概念总览.png)
 
 ### 二、GIL 的行为：什么时候持有，什么时候释放
 
@@ -137,7 +137,7 @@ def safe_add():
 
 **面试一句总结**：GIL 解决的是**解释器级别**的线程安全（内存管理），不解决**业务级别**的线程安全（数据一致性）。
 
-![多线程与 GIL 运行机制](https://gitee.com/linkio666/image/raw/main/01-python-basics/06-threading-gil/02-运行机制.png)
+![多线程与 GIL 运行机制](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/01-python-basics/06-threading-gil/02-运行机制.png)
 
 ### 四、I/O 密集型为什么多线程有效
 
@@ -255,7 +255,7 @@ def consumer():
 
 面试回答按"**GIL 定义 → 出现原因 → 对任务类型的影响 → 线程安全边界 → 替代方案**"展开，清爽且全面。
 
-![多线程与 GIL 面试答题框架](https://gitee.com/linkio666/image/raw/main/01-python-basics/06-threading-gil/03-面试答题框架.png)
+![多线程与 GIL 面试答题框架](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/01-python-basics/06-threading-gil/03-面试答题框架.png)
 
 ---
 

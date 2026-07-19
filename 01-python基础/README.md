@@ -3,7 +3,7 @@
 Python 基础是 Agent 开发的底层编程能力，重点不是背语法，而是理解对象模型、运行时机制、并发模型和内存管理。
 
 
-![Python 基础 路径总览图](https://gitee.com/linkio666/image/raw/main/python-basics-map.png)
+![Python 基础 路径总览图](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/python-basics-map.png)
 
 ## 考点目录
 

@@ -44,7 +44,7 @@
 
 **Hermes 的覆盖范围**：它主要解决第一层和第二层——让开源模型能稳定地输出结构化 tool call。第三层和第四层基本靠你自己。你拿到了模型输出的 JSON，然后呢？你得自己写解析器、参数校验、工具执行、异常处理、上下文拼接、权限判断、日志记录、重试回退。这就像一个给你一台发动机（模型能力很好），但底盘、变速箱、刹车、方向盘都要你自己造。
 
-![两类 Agent 方案的定位](https://gitee.com/linkio666/image/raw/main/09-agent-frameworks/01-openai-vs-hermes/01-概念总览.png)
+![两类 Agent 方案的定位](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/09-agent-frameworks/01-openai-vs-hermes/01-概念总览.png)
 
 ### 二、工具调用闭环如何形成——两种路径，两种代价
 
@@ -62,7 +62,7 @@
 
 这条路的好处是**完全自主**：模型可以部署在内网，数据不出企业边界，没有 API 调用费（只有推理算力成本），你可以深度定制任何环节。坏处也很明显：**工程负担重**。你需要一个工程团队来维护这些基础设施代码，而且很多坑只有踩过了才知道——比如模型输出的 JSON 里偶尔会有 trailing comma（这在标准 JSON 里是非法的），你的解析器能不能容错？如果模型频繁调用同一个无效工具导致死循环，你的步数上限设了多少？
 
-![工具调用闭环](https://gitee.com/linkio666/image/raw/main/09-agent-frameworks/01-openai-vs-hermes/02-运行机制.png)
+![工具调用闭环](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/09-agent-frameworks/01-openai-vs-hermes/02-运行机制.png)
 
 ### 三、工程例子：企业内部 IT 工单 Agent——两个方案的实施对比
 
@@ -127,7 +127,7 @@
 
 **一句话**：OpenAI Agents 是精装房，拎包入住但改造受限；Hermes 是毛坯房，自主装修但工程量大。真正分胜负的不是模型，是你能不能在治理层把安全、权限、审计和回滚做扎实。
 
-![选型边界](https://gitee.com/linkio666/image/raw/main/09-agent-frameworks/01-openai-vs-hermes/03-面试答题框架.png)
+![选型边界](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/09-agent-frameworks/01-openai-vs-hermes/03-面试答题框架.png)
 
 ## 🔍 排查实践
 

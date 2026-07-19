@@ -59,7 +59,7 @@ loop:
 
 这个循环最关键的工程点不是「它能跑」，而是「它什么时候该停」和「什么时候该换路」。你用 LangChain 写这个循环时，停不停止基本靠模型自己判断（通过 agent executor 的 `AgentFinish` 信号）。你用 LangGraph 写时，停不停止由你的条件边判断——比如「state.retry_count > 2 → 转人工结束」或「state.all_tools_success → 生成答案」。
 
-![LangChain 与 LangGraph 定位](https://gitee.com/linkio666/image/raw/main/09-agent-frameworks/04-langchain-langgraph/01-概念总览.png)
+![LangChain 与 LangGraph 定位](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/09-agent-frameworks/04-langchain-langgraph/01-概念总览.png)
 
 ### LangChain 的价值：快速拼装，原型验证
 
@@ -84,7 +84,7 @@ LangGraph 把 Agent 流程建模成有向图，核心概念就三个：
 | **Edge（边）** | 定义转移规则：无条件转移 或 条件转移 | 传送带/分拣口 |
 | **State（共享状态）** | 持久化所有中间变量，每个节点读写 | 随工单流转的文件夹 |
 
-![简单 Agent 执行循环](https://gitee.com/linkio666/image/raw/main/09-agent-frameworks/04-langchain-langgraph/02-运行机制.png)
+![简单 Agent 执行循环](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/09-agent-frameworks/04-langchain-langgraph/02-运行机制.png)
 
 这意味着你可以在图上做这些 LangChain 做不到的事：
 
@@ -132,7 +132,7 @@ LangGraph 把 Agent 流程建模成有向图，核心概念就三个：
 
 这里有一个很多候选人会忽略的关键区分：LangChain 和 LangGraph 是**编排框架**——它们管的是「任务怎么做、步骤怎么走、状态怎么传」。但它们不负责**执行安全**——工具调用的权限校验、沙箱隔离、超时控制、审计日志，这些是 Harness 层的事。
 
-![框架选型边界](https://gitee.com/linkio666/image/raw/main/09-agent-frameworks/04-langchain-langgraph/03-面试答题框架.png)
+![框架选型边界](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/09-agent-frameworks/04-langchain-langgraph/03-面试答题框架.png)
 
 打个比方：框架是装修公司的项目经理，他规划「先砸墙、再走水电、再铺地板」，但他不检查工人有没有资质、有没有戴安全帽、砸的墙是不是承重墙——这些是 Harness 的事。
 

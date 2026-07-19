@@ -3,7 +3,7 @@
 Agent 是大模型应用从“问答”走向“执行”的关键形态。它强调目标、规划、工具、记忆和反馈闭环。
 
 
-![Agent 路径总览图](https://gitee.com/linkio666/image/raw/main/agent-system-map.png)
+![Agent 路径总览图](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/agent-system-map.png)
 
 ## 考点目录
 

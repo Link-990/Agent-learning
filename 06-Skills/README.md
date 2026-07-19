@@ -3,7 +3,7 @@
 Skills 是把任务知识、流程和工具使用方式封装成可复用能力。它更像“任务能力包”，不是单纯的 prompt。
 
 
-![Skills 路径总览图](https://gitee.com/linkio666/image/raw/main/skills-capability-map.png)
+![Skills 路径总览图](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/skills-capability-map.png)
 
 ## 考点目录
 

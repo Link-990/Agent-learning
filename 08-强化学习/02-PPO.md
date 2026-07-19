@@ -4,7 +4,7 @@
 
 PPO 不是 RLHF 的全部，它是 RLHF 三阶段（SFT → 奖励模型 → 策略优化）中**策略优化阶段**的一种算法。它的核心是让模型在追求高奖励的同时，**步子别迈太大**。
 
-![PPO 在 RLHF 中的位置](https://gitee.com/linkio666/image/raw/main/08-rl/02-PPO/01-概念总览.png)
+![PPO 在 RLHF 中的位置](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/08-rl/02-PPO/01-概念总览.png)
 
 ---
 
@@ -96,7 +96,7 @@ PPO 的目标函数有四个关键组件，面试时能拆清楚很加分：
 
 可选组件，鼓励策略保持一定多样性，防止过早坍缩到确定性策略。某个 token 概率接近 1 时熵最低——模型变得"不听劝"。加一点熵奖励，让模型保留探索能力。
 
-![PPO 更新机制](https://gitee.com/linkio666/image/raw/main/08-rl/02-PPO/02-运行机制.png)
+![PPO 更新机制](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/08-rl/02-PPO/02-运行机制.png)
 
 ---
 
@@ -159,7 +159,7 @@ PPO 训练开始后，有三条可能的轨迹：
 7. **采样温度和最大长度不当** → 生成数据分布偏移，训练分布和推理分布不一致。
 8. **只对 chosen 做 SFT 后直接 PPO** → 初始策略太差，采样质量低，PPO 学不动。
 
-![PPO 工程代价](https://gitee.com/linkio666/image/raw/main/08-rl/02-PPO/03-面试答题框架.png)
+![PPO 工程代价](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/08-rl/02-PPO/03-面试答题框架.png)
 
 ---
 

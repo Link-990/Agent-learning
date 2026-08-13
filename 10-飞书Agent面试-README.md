@@ -53,13 +53,20 @@
 
 ## 目录
 
-| 文件 | 主题 | 重点 |
-| --- | --- | --- |
-| `01-agent-vs-llm-workflow.md` | Agent、LLM、Workflow 的区别 | 解释决策权和流程控制权属于谁 |
-| `02-agent-components-and-loop.md` | Agent 核心组件与 Agent Loop | 解释从用户请求到最终答案的完整链路 |
-| `03-agent-patterns.md` | ReAct、Plan-and-Execute、Reflection | 根据任务特征做范式选型 |
-| `04-task-planning-memory-context.md` | 任务拆分、规划、记忆、上下文 | 解释复杂任务为什么失败以及怎么稳定它 |
-| `05-single-vs-multi-agent.md` | Single-Agent 与 Multi-Agent | 判断多 Agent 是否真的值得引入 |
+专题内容现在位于仓库根目录，按学习顺序排列：
+
+| 顺序 | 目录 | 主题 | 重点 |
+| --- | --- | --- | --- |
+| 10 | [`10-Agent基础`](10-Agent基础/01-Agent基础.md) | Agent 基础 | Agent、LLM、Workflow、Agent Loop、推理范式、记忆与上下文、Multi-Agent |
+| 11 | [`11-飞书Agent场景设计`](11-飞书Agent场景设计/) | 飞书 Agent 场景设计 | 知识问答、会议纪要、审批、表格分析、消息与员工助手 |
+| 12 | [`12-RAG与企业知识库`](12-RAG与企业知识库/) | RAG 与企业知识库 | 数据接入、解析切分、检索、同步、权限和评测 |
+| 13 | [`13-工具调用与飞书开放能力`](13-工具调用与飞书开放能力/) | 工具调用与开放能力 | Function Calling、MCP、API、Webhook、事件订阅和人机协同 |
+| 14 | [`14-企业级Agent工程化`](14-企业级Agent工程化/) | 企业级 Agent 工程化 | 身份、权限、安全、成本、可观测性和灰度发布 |
+| 15 | [`15-系统设计题`](15-系统设计题/) | 系统设计题 | 知识问答、审批助手、跨源分析、多 Agent 和上线方案 |
+| 16 | [`16-项目深挖与模拟面试`](16-项目深挖与模拟面试/) | 项目深挖与模拟面试 | 架构、技术选型、失败复盘、指标和高频追问 |
+| 17 | [`17-附录`](17-附录/) | 附录 | 术语表、流程图、接口示例、题目索引和参考资料 |
+
+原仓库中的 [Agent 基础](04-Agent/README.md)、[RAG](03-RAG/README.md)、[MCP](05-MCP/README.md) 和 [Skills](06-Skills/README.md) 仍保留，适合与本专题交叉复习。
 
 ## 后续扩展
 

@@ -14,6 +14,13 @@ Agent 是大模型应用从“问答”走向“执行”的关键形态。它�
 - [工具：Function Calling 方式](05-function-calling.md)
 - [Multi-Agent 架构、通信机制与 A2A](06-multi-agent-a2a.md)
 
+## 面试技巧扩展
+
+- [Agent 基础面试专题](../10-面试技巧/01-Agent基础/)
+- [飞书 Agent 场景设计](../10-面试技巧/02-飞书Agent场景设计/)
+- [企业级 Agent 工程化](../10-面试技巧/05-企业级Agent工程化/)
+- [系统设计题](../10-面试技巧/06-系统设计题/)
+
 ---
 
 [返回总目录](../README.md)

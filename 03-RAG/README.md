@@ -13,6 +13,10 @@ RAG 是 Agent 应用中最常见的知识增强方案。它不是简单的“向
 - [向量检索和关键词检索区别](04-vector-vs-keyword.md)
 - [检索优化策略](05-retrieval-optimization.md)
 
+## 面试技巧扩展
+
+- [RAG 与企业知识库面试专题](../10-面试技巧/03-RAG与企业知识库/)
+
 ---
 
 [返回总目录](../README.md)

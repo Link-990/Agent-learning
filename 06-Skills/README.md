@@ -12,6 +12,10 @@ Skills 是把任务知识、流程和工具使用方式封装成可复用能力�
 - [MCP、CLI、Skills 和 Function Calling 的区别与协同](03-mcp-cli-skills-fc.md)
 - [Skills 优缺点](04-skills-pros-cons.md)
 
+## 面试技巧扩展
+
+- [工具调用与飞书开放能力](../10-面试技巧/04-工具调用与飞书开放能力/)
+
 ---
 
 [返回总目录](../README.md)

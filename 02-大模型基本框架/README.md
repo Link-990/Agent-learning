@@ -1,18 +1,3 @@
-# 大模型基本框架
+# 目录已重组
 
-大模型基本框架是 Agent 开发的认知底座。理解 Transformer、注意力、模型结构和 KV 缓存，才能解释大模型为什么能理解、生成和推理。
-
-
-![大模型基本框架 路径总览图](https://raw.githubusercontent.com/Link-990/Agent-learning/main/images/llm-architecture-flow.png)
-
-## 考点目录
-
-- [Transformer 架构和核心组件](01-transformer.md)
-- [自注意力机制](02-self-attention.md)
-- [Encoder-Only 和 Decoder-Only 代表模型及区别](03-encoder-decoder.md)
-- [大模型从输入文本到输出文本的运行机制](04-llm-io.md)
-- [KV 缓存](05-kv-cache.md)
-
----
-
-[返回总目录](../README.md)
+原大模型基础内容已迁移到 [基础与模型 / 大模型运行机制](../01-基础与模型/02-大模型运行机制/README.md)。

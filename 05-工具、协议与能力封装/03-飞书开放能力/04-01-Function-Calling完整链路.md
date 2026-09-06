@@ -20,7 +20,7 @@
 
 工具调用要有超时、重试、幂等、审计和停止条件。模型输出的参数永远是不可信输入，所有写操作要经过业务服务二次校验，必要时等待用户确认。
 
-![Function Calling 完整执行链路图](images/04-01-function-calling-overview.png)
+![Function Calling 完整执行链路图](04-01-function-calling-overview.png)
 
 ## 原理拆解
 

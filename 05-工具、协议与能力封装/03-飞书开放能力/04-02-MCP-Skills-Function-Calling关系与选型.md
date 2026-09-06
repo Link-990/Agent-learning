@@ -20,7 +20,7 @@ Function Calling 是模型与应用运行时之间表达结构化动作意图的
 
 飞书场景中，应用内部少量稳定工具可以直接用 Function Calling；需要接入多个外部系统或复用工具服务时可以使用 MCP；复杂的“整理会议并创建待办”这类任务适合封装成 Skill，内部仍可通过 Function Calling 或 MCP 执行。
 
-![MCP、Skills 与 Function Calling 分层关系图](images/04-02-mcp-skills-function-overview.png)
+![MCP、Skills 与 Function Calling 分层关系图](04-02-mcp-skills-function-overview.png)
 
 ## 原理拆解
 

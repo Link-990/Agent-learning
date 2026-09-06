@@ -20,7 +20,7 @@ Embedding 解决的是语义表示，不解决全部检索问题。企业文档�
 
 Embedding 模型要结合语言、领域和成本评测，向量库需要支持索引更新、过滤、分片和备份。Rerank 只处理有限候选集，不能替代召回。最终以真实问题上的 Recall@K、MRR、NDCG、引用准确率、延迟和成本综合判断。
 
-![Embedding、混合检索与 Rerank 流程图](images/03-03-hybrid-retrieval-overview.png)
+![Embedding、混合检索与 Rerank 流程图](03-03-hybrid-retrieval-overview.png)
 
 ## 原理拆解
 

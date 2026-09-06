@@ -20,7 +20,7 @@ Query Rewrite 如果没有保留原问题、用户身份和业务约束，可能
 
 回答阶段只允许引用实际进入上下文且通过权限过滤的证据，引用对象使用源文档 ID、块 ID、标题路径和版本，不让模型自由编造链接。遇到证据冲突，要展示版本和来源差异，不能静默拼接成一个结论。
 
-![Query Rewrite、多路召回与引用溯源流程图](images/03-04-query-rewrite-citation-overview.png)
+![Query Rewrite、多路召回与引用溯源流程图](03-04-query-rewrite-citation-overview.png)
 
 ## 原理拆解
 

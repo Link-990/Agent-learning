@@ -22,7 +22,7 @@
 
 切分时要兼顾检索精度和回答上下文：短 Chunk 用于精准召回，父子 Chunk 或邻接扩展用于补足语义。表格要保留表头和行列关系，引用要能定位到原文位置。上线前用真实问题验证召回率、引用完整性和上下文冗余。
 
-![文档解析与 Chunk 切分流程图](images/03-02-chunk-metadata-overview.png)
+![文档解析与 Chunk 切分流程图](03-02-chunk-metadata-overview.png)
 
 ## 原理拆解
 

@@ -20,7 +20,7 @@
 
 事件入口只做鉴权、去重和入队，Agent 在异步消费者中处理；最终写操作使用幂等键，回调和 API 状态都要可观测。不要把事件顺序、一次投递或网络成功等同于业务成功。
 
-![飞书 API、Webhook 与事件订阅接入流程图](images/04-03-feishu-api-events-overview.png)
+![飞书 API、Webhook 与事件订阅接入流程图](04-03-feishu-api-events-overview.png)
 
 ## 原理拆解
 

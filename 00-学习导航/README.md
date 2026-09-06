@@ -4,7 +4,7 @@
 
 ## 推荐主线
 
-`text
+```text
 基础与模型
   -> Agent 核心原理
   -> Agent Runtime
@@ -15,7 +15,7 @@
   -> 场景实战
   -> 系统设计
   -> 项目深挖与模拟面试
-`
+```
 
 阅读主线时不要跳过 Runtime。它把文章里的 State、Event、Tool、Checkpoint 变成可以运行和排错的系统。
 

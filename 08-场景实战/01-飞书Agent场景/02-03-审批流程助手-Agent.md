@@ -22,7 +22,7 @@
 
 在真正提交前，系统必须把申请类型、关键字段、审批人和可能的影响展示给用户确认。提交之后，审批状态由流程系统维护，Agent 只负责查询、解释和通知，不能靠模型直接改变审批结果。
 
-![审批与流程助手 Agent 流程图](images/02-03-approval-agent-overview.png)
+![审批与流程助手 Agent 流程图](02-03-approval-agent-overview.png)
 
 ## 原理拆解
 
